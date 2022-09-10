@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ass1</title>
+        <link rel="stylesheet" type="text/css" href="./dash.component.css">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+      <div class="table-responsive">          
+        <table class="table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>ALBUM ID</th>
+              <th>URL LINK</th>
+              <th>THUMBNAIL URL</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let a of api1">
+            <td> {{a.id}}</td>
+            <td>{{a.albumId}}</td>
+            <td>{{a.url}}</td>
+            <td>{{a.thumbnailUrl}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+   </body>
+   </html>

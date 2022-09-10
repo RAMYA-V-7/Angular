@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login page</title>
+    <link rel="stylesheet" type="text/css" href="./login.component.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="login-form">
+      <h1>Login Form</h1>
+      <form action="#" method="post">
+        <p>User Name</p>
+        <input type="text" #box (keypress)="getName(box.value)" name="username" placeholder="Enter User Name"/>
+        <p>Password</p>
+        <input type="password" #box1 (keypress)="getPass(box1.value)" name="password" placeholder="Enter Password"/><br><br>
+        <button  type="button" (click)="onCheck()"  value="Submit">Submit</button>
+      
+      </form>
+      
+    </div>
+  </body>
+</html>
